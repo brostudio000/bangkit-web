@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    background-color: #252525;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1rem;
+    z-index: 999;
+    position: fixed;
+}
+
+header.navbar-container .logo img {
+    display: flex;
+    max-width: 80px;
+}
+
+header.navbar-container .judul-web {
+    padding-left: 15%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 2rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    padding: .7rem;
+    border-radius: 999px;
+    transition: all .3s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    color: #ffffff;
+    background-color: #0060ce;
+}
+
+main {
+    max-width: 1080px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 3rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    
+}
+
+main .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem;
+    flex-direction: column;
+}
+
+main .content .content-desc {
+    flex: 1 1;
+    box-shadow: 0 2px 4px 2px #0000002a;
+    padding: 2rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+}
+
+main .content .content-desc .content-title {
+    font-size: 32px;
+    margin-block: 1rem;
+}
+
+main .content .content-desc .content-img img {
+    max-width: 1080px;
+    width: 100%;
+}
+
+main .content .content-desc p {
+    line-height: 1.5rem;
+    font-size: 18px;
+    text-align: justify;
+}
+
+main .content .content-desc button {
+    padding: .7rem 2rem;
+    margin-block-start: 1rem;
+    background-color: #252525;
+    border: transparent;
+    border-radius: 999px;
+}
+
+main .content .content-desc a {
+    text-decoration: none;
+    color: white;
+}
+
+main .content .content-desc button:hover {
+    background-color: #0060ce;
+    box-shadow: 0 1px 4px 2px #0000003a;
+    transition: all .2s ease-in-out;
+}
+
+main .content #content-desc2 {
+    flex: 1 1;
+    box-shadow: 0 2px 4px 2px #0000002a;
+    padding: 2rem 2rem;
+    border-radius: 8px;
+}
+
+main .content #content-desc2 .content-title {
+    font-size: 32px;
+    margin-block: 1rem;
+}
+
+main .content #content-desc2 .content-img img {
+    max-width: 1080px;
+    width: 100%;
+}
+
+main .content #content-desc2 p {
+    line-height: 1.5rem;
+    font-size: 18px;
+    text-align: justify;
+}
+
+main .content #content-desc2 button {
+    padding: .7rem 2rem;
+    margin-block-start: 1rem;
+    background-color: #252525;
+    border: transparent;
+    border-radius: 999px;
+}
+
+main .content #content-desc2 a {
+    text-decoration: none;
+    color: white;
+}
+
+main .content #content-desc2 button:hover {
+    background-color: #0060ce;
+    box-shadow: 0 1px 4px 2px #0000003a;
+    transition: all .2s ease-in-out;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    max-width: 1080px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 5rem 5rem;
+    flex: 1 1;
+    align-items: center;
+}
+
+aside #about-me {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 2rem 2rem;
+    box-shadow: 0 2px 4px 2px #0000002a;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+aside #about-me #name {
+    text-align: center;
+}
+
+aside #about-me #bio-img {
+    display: flex;
+    justify-content: center;
+    max-width: 240px;
+    margin: auto;
+}
+
+aside #about-me p {
+    text-align: justify;
+}
+
+.top {
+    font-size: 16px;
+    max-width: 60px;
+    padding: .7rem;
+    color: white;
+    background-color: #252525;
+    border: transparent;
+    border-radius: 999px;
+    display: flex;
+    position: fixed;
+    top: 80%;
+    left: 93%;
+}
+
+.top:hover {
+    background-color: #0060ce;
+    box-shadow: 0 1px 4px 2px #0000003a;
+    transition: all .2s ease-in-out;
+}
+
+footer {
+    background-color: #252525;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    header.navbar-container .judul-web {
+        font-size: 3rem;
+        padding-left: 0;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 2rem;
+    }
+
+    header.navbar-container .nav-list li a {
+        font-size: 1.5rem;
+    }
+
+    aside {
+        max-width: 1000px;
+    }
+
+    aside #about-me #name {
+        font-size: 2.5rem;
+    }
+
+    aside #about-me p {
+        font-size: 1.3rem;
+    }
+
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 11rem;
+    }
+
+    main .content .content-desc .content-title {
+        font-size: 2.2rem;
+    }
+
+    main .content .content-desc p {
+        font-size: 1.2rem;
+    }
+
+    main .content .content-desc2 .content-title {
+        font-size: 2.2rem;
+    }
+
+    main .content .content-desc2 p {
+        font-size: 1.2rem;
+    }
+
+    .top {
+        top: 80%;
+        left: 92%;
+    }
+}
